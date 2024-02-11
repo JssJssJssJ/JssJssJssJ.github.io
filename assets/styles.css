@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Roboto:wght@300&display=swap');
+html {
+    font-family: 'Roboto', sans-serif;
+    background-color: aliceblue;
+}
+h1 {
+  color: blue;
+  font-size: 300%;
+}
+
+img {
+    border: solid;
+    border-color: royalblue;
+    border-radius: 15px;
+    border-width: 2px;
+    background-color: ghostwhite;
+}
+a.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  border: solid;
+  border-color:royalblue;
+  border-width:2px;
+  border-radius: 5px;
+  padding: 5px 7px 5px 7px;
+  text-decoration: none;
+  background-color: beige;
+  color: initial;
+}
+a.button:hover {
+  background-color: #919181;
+}
+li{
+  margin: 5px;
+}
