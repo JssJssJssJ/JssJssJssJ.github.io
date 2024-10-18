@@ -34,8 +34,9 @@ h1 {
     margin-bottom: 10px;
 }
 
-#result1, #result2 {
+.result {
     margin-top: 0;
     font-size: 1.5em;
     color: #333;
 }
+
