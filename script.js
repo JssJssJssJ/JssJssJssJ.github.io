@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		result1.textContent = `Syntymäpäivään enää ${daysDifference1} päivää!`;
 	}
 	
-    let futureDate2 = new Date('2024-12-4');
+    let futureDate2 = new Date('2024-12-04');
     let timeDifference2 = futureDate2 - currentDate;
     let daysDifference2 = Math.ceil(timeDifference2 / (1000 * 60 * 60 * 24));
 	while (daysDifference2 < 0) {
