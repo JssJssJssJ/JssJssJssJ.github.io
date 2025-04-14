@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const result1 = document.getElementById('result1');
     const result2 = document.getElementById('result2');
     const result3 = document.getElementById('result3');
+    const result4 = document.getElementById('result4');
 
     const currentDate = new Date();
 
@@ -48,6 +49,23 @@ document.addEventListener("DOMContentLoaded", () => {
 	}
 	else {
 		result3.textContent = `Jouluun enää ${daysDifference3} päivää!`;
+	}
+	
+    let futureDate4 = new Date('2025-06-04');
+    let timeDifference4 = futureDate4 - currentDate;
+    let daysDifference4 = Math.ceil(timeDifference4 / (1000 * 60 * 60 * 24));
+	while (daysDifference4 < 0) {
+		futureDate4.setFullYear(futureDate4.getFullYear() + 1);
+		timeDifference4 = futureDate4 - currentDate;
+    	daysDifference4 = Math.ceil(timeDifference3 / (1000 * 60 * 60 * 24));		
+	}
+    if (daysDifference4 == 0) {
+		result4.textContent = `Laskettu aika on tänään!`;
+	}
+	else if(daysDifference4 > 0) {
+		result4.textContent = `Laskettuun aikaan enää ${daysDifference4} päivää!`;
+	} else {
+		result4.textContent = `Laskettu aika oli ${daysDifference4} päivää sitten!`;
 	}
 
 });
