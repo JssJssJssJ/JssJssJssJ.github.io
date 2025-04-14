@@ -54,11 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let futureDate4 = new Date('2025-06-04');
     let timeDifference4 = futureDate4 - currentDate;
     let daysDifference4 = Math.ceil(timeDifference4 / (1000 * 60 * 60 * 24));
-	while (daysDifference4 < 0) {
-		futureDate4.setFullYear(futureDate4.getFullYear() + 1);
-		timeDifference4 = futureDate4 - currentDate;
-    	daysDifference4 = Math.ceil(timeDifference3 / (1000 * 60 * 60 * 24));		
-	}
+
     if (daysDifference4 == 0) {
 		result4.textContent = `Laskettu aika on tänään!`;
 	}
