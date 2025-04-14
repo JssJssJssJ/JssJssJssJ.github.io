@@ -3,8 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const result2 = document.getElementById('result2');
     const result3 = document.getElementById('result3');
     const result4 = document.getElementById('result4');
-
-	console.log('result4:', result4);
 	
     const currentDate = new Date();
 
