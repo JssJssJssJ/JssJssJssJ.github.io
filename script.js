@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	else if(daysDifference4 > 0) {
 		result4.textContent = `Laskettuun aikaan enää ${daysDifference4} päivää!`;
 	} else {
-		result4.textContent = `Laskettu aika oli ${daysDifference4} päivää sitten!`;
+		result4.textContent = `Laskettu aika oli ${-daysDifference4} päivää sitten!`;
 	}
 
 });
