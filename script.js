@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const result3 = document.getElementById('result3');
     const result4 = document.getElementById('result4');
 
+	console.log('result4:', result4);
+	
     const currentDate = new Date();
 
     let futureDate1 = new Date('2024-11-14');
