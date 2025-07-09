@@ -65,7 +65,7 @@ if (isNaN(futureDate4)) {
 }
 
 // Update the text content
-result.textContent = "TESTI"
+result4.textContent = "TESTI"
 // result.textContent = `Arvin ikä vuosina: ${years} vuo${years !== 1 ? 'tta' : 'si'}\n Arvin ikä kuukausina: ${months} kuukau${months !== 1 ? 'tta' : 'si'}\n Arvin ikä viikkoina: ${weeks} viikko${weeks !== 1 ? 'a' : ''}\n Arvin ikä päivinä: ${daysDifference} päiv${daysDifference !== 1 ? 'ää' : 'ä'}`;
 
 
