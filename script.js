@@ -60,6 +60,10 @@ let years = Math.floor(daysDifference4 / 365);
 let months = Math.floor(daysDifference4 / 30.4375); // average month length
 let weeks = Math.floor(daysDifference4 / 7);
 
+if (isNaN(futureDate4)) {
+  console.error("Invalid date format");
+}
+
 // Update the text content
 result.textContent = "TESTI"
 // result.textContent = `Arvin ikä vuosina: ${years} vuo${years !== 1 ? 'tta' : 'si'}\n Arvin ikä kuukausina: ${months} kuukau${months !== 1 ? 'tta' : 'si'}\n Arvin ikä viikkoina: ${weeks} viikko${weeks !== 1 ? 'a' : ''}\n Arvin ikä päivinä: ${daysDifference} päiv${daysDifference !== 1 ? 'ää' : 'ä'}`;
