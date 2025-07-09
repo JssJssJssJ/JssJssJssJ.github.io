@@ -51,7 +51,6 @@ document.addEventListener("DOMContentLoaded", () => {
 		result3.textContent = `Jouluun enää ${daysDifference3} päivää!`;
 	}
 
-
 let futureDate4 = new Date('2025-27-03');
 let timeDifference4 = currentDate - futureDate4; // elapsed time
 let daysDifference4 = Math.floor(timeDifference4 / (1000 * 60 * 60 * 24));
