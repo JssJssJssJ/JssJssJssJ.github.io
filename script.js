@@ -55,13 +55,18 @@ document.addEventListener("DOMContentLoaded", () => {
     let timeDifference4 = futureDate4 - currentDate;
     let daysDifference4 = Math.ceil(timeDifference4 / (1000 * 60 * 60 * 24));
 
-    if (daysDifference4 == 0) {
-		result4.textContent = `Laskettu aika on tänään!`;
-	}
-	else if(daysDifference4 > 0) {
-		result4.textContent = `Laskettuun aikaan enää ${daysDifference4} päivää!`;
-	} else {
-		result4.textContent = `Laskettu aika oli ${-daysDifference4} päivää sitten!`;
-	}
+let futureDate4 = new Date('2025-27-03');
+let timeDifference4 = currentDate - futureDate4; // elapsed time
+let daysDifference4 = Math.floor(timeDifference4 / (1000 * 60 * 60 * 24));
+
+// Compute elapsed time in different units
+let years = Math.floor(daysDifference4 / 365);
+let months = Math.floor(daysDifference4 / 30.4375); // average month length
+let weeks = Math.floor(daysDifference4 / 7);
+
+// Update the text content
+result.textContent = `Arvin ikä vuosina: ${years} vuo${years !== 1 ? 'tta' : 'si'}\n Arvin ikä kuukausina: ${months} kuukau${months !== 1 ? 'tta' : 'si'}\n Arvin ikä viikkoina: ${weeks} viikko${weeks !== 1 ? 'a' : ''}\n Arvin ikä päivinä: ${daysDifference} päiv${daysDifference !== 1 ? 'ää' : 'ä'}`;
+
+
 
 });
