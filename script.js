@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 let futureDate4 = new Date('2025-03-27');
 let timeDifference4 = currentDate - futureDate4; // elapsed time
-let daysDifference4 = Math.floor(timeDifference4 / (1000 * 60 * 60 * 24));
+let daysDifference4 = Math.ceil(timeDifference4 / (1000 * 60 * 60 * 24));
 
 // Compute elapsed time in different units
 let years = Math.floor(daysDifference4 / 365);
